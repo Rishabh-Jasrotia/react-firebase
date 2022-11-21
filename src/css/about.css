@@ -1,0 +1,132 @@
+.about-main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 210px;
+}
+.about-content h2 {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  width: fit-content;
+  font-size: 45px;
+}
+.about-content span {
+  text-decoration: none;
+  width: fit-content;
+}
+.about-content img {
+  transform: rotate(45deg);
+  width: 50px;
+}
+.about-content p {
+  font-family: "Montserrat", sans-serif;
+  color: #c58403;
+  width: 600px;
+  font-size: 16px;
+  text-align: center;
+}
+.about-timeline {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: space-between;
+}
+.t-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70px;
+  height: 120px;
+}
+.t-icon {
+  object-fit: contain;
+}
+.t-icon img {
+  width: 60px;
+}
+.t-item span {
+  height: fit-content;
+}
+.t-item > img {
+  width: 70px;
+  height: 10px;
+  object-fit: cover;
+}
+.t-item p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-timeline,
+  .about-content p {
+    width: 570px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .about-content h2 {
+    font-size: 38px;
+  }
+  .about-content p {
+    font-size: 15px;
+    width: 395px;
+  }
+  .about-timeline {
+    width: 395px;
+  }
+  .t-icon img {
+    width: 45px;
+  }
+  .t-item {
+    width: 50px;
+    height: 120px;
+  }
+  .t-item > img {
+    width: 50px;
+    height: 10px;
+  }
+  .t-item p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about-content h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .about-content p {
+    font-size: 15px;
+    width: 100%;
+  }
+  .about-timeline {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .t-icon img {
+    width: 60px;
+  }
+  .t-item {
+    flex: 50%;
+    height: 120px;
+  }
+  .t-item > img {
+    width: 70px;
+    height: 10px;
+  }
+  .t-item p {
+    font-size: 15px;
+  }
+}

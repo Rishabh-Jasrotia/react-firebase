@@ -1,0 +1,125 @@
+#login
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+}
+.labelName
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: text;
+    border-radius: 8px;
+    color: #c58403;
+}
+.labelName span
+{
+    position: absolute;
+    left:12px;
+    top: -15px;
+    font-size: 16px;
+    background-color: transparent;
+}
+#filler
+{
+    position: absolute;
+    width: 127px;
+    height: 10.8px;
+    left: 9px;
+    top: -4px;
+    z-index: -1;
+    background-color: #413c30;
+}
+#userName
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    width: calc(100% - (14px));
+    padding-left: 10px;
+    height: 50px;
+    font-size: 18px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -2;
+    background-color: #413c30;
+    border-radius: 8px;
+    border: solid #797063 2px;
+}
+#userName::placeholder
+{
+    font-size: 14px;
+}
+#userName:focus
+{
+    outline:none;
+    border: solid white 2px;
+}
+input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.labelImg
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: none;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+    background-color: white;
+    cursor: pointer;
+    background-color: #413c30;
+    border-radius: 8px;
+    border: dashed #797063 2px;
+}
+.labelImg img
+{
+    position: absolute;
+    width: 180px;
+    left: 10px;
+    top: 10px;
+}
+.fileName
+{
+    color: #c58403;
+    width: 180px;
+    text-align: center;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#container button
+{
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    background-color: #514119 !important;
+    height: 40px;
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+}
